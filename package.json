@@ -1,0 +1,16 @@
+{
+  "name": "software-development-skills-front-end",
+  "version": "1.0.0",
+  "description": "Project for the Front End part of the Software Development Skills course",
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w Learning-Tasks/scss/ -o Learning-Tasks/dist/css/ --recursive"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
