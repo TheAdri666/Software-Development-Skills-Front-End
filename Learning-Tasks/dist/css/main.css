@@ -127,7 +127,7 @@ main {
     .menu .menu-nav.show {
       transform: translate3d(0, 0, 0); }
     .menu .menu-nav .nav-item {
-      transform: translate3d(600px, 0, 0);
+      transform: translate3d(100% px, 0, 0);
       transition: all 0.5s ease-out; }
       .menu .menu-nav .nav-item.show {
         transform: translate3d(0, 0, 0); }
@@ -153,3 +153,30 @@ main {
         transition: all 0.5s ease-out; }
         .menu .menu-nav .nav-item .nav-link:hover {
           color: #eece1a; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  .menu .menu-nav,
+  .menu .menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+  .menu .menu-nav {
+    height: 75vh;
+    font-size: 1.5rem;
+    transform: translate3d(-100%, 0, 0); }
+  .menu .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu .menu-branding .portrait {
+      height: 150px;
+      width: 150px; } }
+
+@media screen and (max-width: 600px) {
+  main#home h1 {
+    margin-top: 10vh; } }

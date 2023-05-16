@@ -35,3 +35,27 @@
     }
   }
 }
+
+@mixin mediaS {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin mediaM {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaL {
+  @media screen and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXL {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}

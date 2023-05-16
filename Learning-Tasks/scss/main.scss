@@ -128,7 +128,7 @@ main {
     }
 
     .nav-item {
-      transform: translate3d(600px, 0, 0);
+      transform: translate3d(100%px, 0, 0);
       @include easeOut;
 
       &.show {
@@ -162,3 +162,4 @@ main {
   }
 }
 
+@import 'mobile';
