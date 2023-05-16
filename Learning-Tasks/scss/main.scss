@@ -152,7 +152,7 @@ main {
         font-weight: 600;
         color: #fff;
         text-decoration: none;
-        @include easeOut
+        @include easeOut;
 
         &:hover {
           color: $secondary-color;
