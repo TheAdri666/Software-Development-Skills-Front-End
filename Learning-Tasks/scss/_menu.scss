@@ -11,7 +11,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut
   }
 
@@ -33,29 +33,5 @@
         transform: rotate(-45deg) translate(7px, -6px);
       }
     }
-  }
-}
-
-@mixin mediaS {
-  @media screen and (max-width: 600px) {
-    @content;
-  }
-}
-
-@mixin mediaM {
-  @media screen and (max-width: 768px) {
-    @content;
-  }
-}
-
-@mixin mediaL {
-  @media screen and (max-width: 1170px) {
-    @content;
-  }
-}
-
-@mixin mediaXL {
-  @media screen and (min-width: 1171px) {
-    @content;
   }
 }
