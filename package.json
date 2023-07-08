@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w Learning-Tasks/scss/ -o Learning-Tasks/dist/css/ --recursive"
+    "sass-tasks": "node-sass -w Learning-Tasks/scss/ -o Learning-Tasks/dist/css/ --recursive",
+    "sass": "node-sass -w FinalProject/scss -o FinalProject/dist/css/ --recursive"
   },
   "keywords": [],
   "author": "",
