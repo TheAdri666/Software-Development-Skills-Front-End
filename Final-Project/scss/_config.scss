@@ -50,12 +50,18 @@ $background-opacity: 0.75;
 }
 
 @mixin mediaL {
-  @media screen and (max-width: 1170px) {
+  @media screen and (max-width: 1100px) {
     @content;
   }
 }
 
 @mixin mediaXL {
+  @media screen and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXXL {
   @media screen and (min-width: 1171px) {
     @content;
   }
