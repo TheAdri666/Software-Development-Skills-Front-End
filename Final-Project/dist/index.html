@@ -3,32 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
     <title>Linux knowledge dump</title>
   </head>
-  <body>
+  <body id="bg-img">
     <header>
-      <ul>
-        <li class="nav-item current"><a href="">Home</a></li>
-        <li class="nav-item"><a href="debian.html">Debian</a></li>
-        <li class="nav-item"><a href="arch.html">Arch</a></li>
-        <li class="nav-item"><a href="fedora.html">Fedora</a></li>
-        <li class="nav-item"><a href="slackware.html">Slackware</a></li>
-        <li class="nav-item current"><a href="ubuntu.html">Ubuntu</a></li>
+      <ul class="menu-nav hide">
+        <li class="nav-item current">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="debian.html">Debian</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="arch.html">Arch</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="fedora.html">Fedora</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="slackware.html">Slackware</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ubuntu.html">Ubuntu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="manjaro.html">Manjaro</a>
+        </li>
       </ul>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
     </header>
     <main id="home">
       <div class="title">
-        <img src="" alt="Tux penguin" class="distro" />
-        <h1>Linux knowledge dump</h1>
+        <img
+          class="distro"
+          src="img/tux-penguin.png"
+          alt="Tux penguin"
+          class="distro"
+        />
+        <h1 class="long-h1">Linux knowledge dump</h1>
       </div>
-      <p>
-        Linux knowledge dump is, as its name suggests, a place for me to write
-        some of the knowledge I have about the different Linux distros.
-      </p>
-      <p>
-        It serves a didactic purpose for anyone interested but it is mostly a
-        ludic (A.K.A. for fun) personal project.
-      </p>
+      <div class="about">
+        <p><span class="about-spec">About Linux knowledge dump:</span></p>
+        <p>
+          Linux knowledge dump is, as its name suggests, a place for me to write
+          some of the knowledge I have about the different Linux distros.
+        </p>
+        <p>
+          It serves a didactic purpose for anyone interested but it is mostly a
+          ludic (A.K.A. for fun) personal project.
+        </p>
+      </div>
     </main>
     <footer>
       Copyright &copy; 2023 (Actually not copyrighted, it just looked good)

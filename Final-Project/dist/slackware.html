@@ -3,25 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
     <title>Linux knowledge dump</title>
   </head>
-  <body>
+  <body id="bg-img">
     <header>
-      <ul>
-        <li class="nav-item"><a href="">Home</a></li>
-        <li class="nav-item"><a href="debian.html">Debian</a></li>
-        <li class="nav-item"><a href="arch.html">Arch</a></li>
-        <li class="nav-item"><a href="fedora.html">Fedora</a></li>
-        <li class="nav-item current"><a href="slackware.html">Slackware</a></li>
-        <li class="nav-item"><a href="ubuntu.html">Ubuntu</a></li>
+      <ul class="menu-nav hide">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="debian.html">Debian</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="arch.html">Arch</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="fedora.html">Fedora</a>
+        </li>
+        <li class="nav-item current">
+          <a class="nav-link" href="slackware.html">Slackware</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ubuntu.html">Ubuntu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="manjaro.html">Manjaro</a>
+        </li>
       </ul>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
     </header>
     <main id="slackware">
       <div class="title">
-        <img src="" alt="Slackware Logo" class="distro" />
+        <img
+          class="distro"
+          src="img/slackware-logo.png"
+          alt="Slackware Logo"
+          class="distro"
+        />
         <h1>Slackware</h1>
       </div>
-      <p></p>
+      <div class="spec-wrapper">
+        <p><span class="spec">Based On: </span>Independent.</p>
+        <p><span class="spec">Package Manager: </span>Slpkg.</p>
+        <p><span class="spec">Origin: </span>USA.</p>
+        <p>
+          <span class="spec">Popular Desktop Environments: </span>KDE, Xfce,
+          Blackbox, Fluxbox, FVWM, KDE, WMaker.
+        </p>
+        <p><span class="spec">Update policy: </span>Once every few years.</p>
+        <p>
+          <span class="spec">Home page: </span
+          ><a class="homepage-link" href="http://www.slackware.com/"
+            >http://www.slackware.com/</a
+          >
+        </p>
+      </div>
+      <div class="about">
+        <p><span class="about-spec">About Slackware:</span></p>
+        <p>
+          Altough not as popular nowadays, Slackware is one of the oldest still
+          active Linux distributions.
+        </p>
+        <p>
+          Slackware focuses on ease of use and stability as its two main goals,
+          which is why it is not updated as often as other distros. It aims to
+          include the latest popular software but maintaining a sense of
+          tradition for those who prefer a more old-school system.
+        </p>
+        <p>
+          Its development started in 1991 and it is still being actively
+          maintained. Slackware is meant for general use, both as a server and
+          as a desktop machine, which is why beside the more common office suite
+          programs it also features a wide array of development tools, editors
+          and libraries.
+        </p>
+      </div>
     </main>
     <footer>
       Copyright &copy; 2023 (Actually not copyrighted, it just looked good)

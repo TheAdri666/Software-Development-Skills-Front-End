@@ -3,48 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
     <title>Linux knowledge dump</title>
   </head>
-  <body>
+  <body id="bg-img">
     <header>
-      <ul>
-        <li class="nav-item"><a href="">Home</a></li>
-        <li class="nav-item current"><a href="debian.html">Debian</a></li>
-        <li class="nav-item"><a href="arch.html">Arch</a></li>
-        <li class="nav-item"><a href="fedora.html">Fedora</a></li>
-        <li class="nav-item"><a href="slackware.html">Slackware</a></li>
-        <li class="nav-item current"><a href="ubuntu.html">Ubuntu</a></li>
+      <ul class="menu-nav hide">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item current">
+          <a class="nav-link" href="debian.html">Debian</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="arch.html">Arch</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="fedora.html">Fedora</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="slackware.html">Slackware</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ubuntu.html">Ubuntu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="manjaro.html">Manjaro</a>
+        </li>
       </ul>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
     </header>
     <main id="debian">
       <div class="title">
-        <img src="" alt="Debian Logo" class="distro" />
+        <img
+          class="distro"
+          src="img/debian-logo.png"
+          alt="Debian Logo"
+          class="distro"
+        />
         <h1>Debian</h1>
       </div>
       <div class="spec-wrapper">
-        <p><span class="spec">Based On:</span>Independent</p>
-        <p><span class="spec">Package Manager:</span>Apt</p>
-        <p><span class="spec">Origin:</span>Global</p>
+        <p><span class="spec">Based On: </span>Independent.</p>
+        <p><span class="spec">Package Manager: </span>Apt.</p>
+        <p><span class="spec">Origin: </span>Global.</p>
         <p>
-          <span class="spec">Popular Desktop Environments:</span>Cinnamon,
-          GNOME, i3, KDE, LXDE, LXQt, MATE, Xfce
+          <span class="spec">Popular Desktop Environments: </span>Cinnamon,
+          GNOME, i3, KDE, LXDE, LXQt, MATE, Xfce.
         </p>
-        <p><span class="spec">Update policy:</span>2 year versions</p>
+        <p><span class="spec">Update policy: </span>2 year versions.</p>
         <p>
-          <span class="spec">Home page:</span
-          ><a href="https://www.debian.org/"></a>
+          <span class="spec">Home page: </span
+          ><a class="homepage-link" href="https://www.debian.org/"
+            >https://www.debian.org/</a
+          >
         </p>
       </div>
       <div class="about">
+        <p><span class="about-spec">About Debian:</span></p>
         <p>
           Debian is a distribution that has long been considered the mother of
           Linux distributions, it starts one of the two big branches of Linux
           distributions today, the other one being Arch Linux, but Debian's is
-          much larger. Because Debian has a two year gap in between versions
-          with only small security updates in between it tends to lag behind
-          other distributions in terms of bleeding-edge technology. This however
-          makes Debian a really stable distribution, which makes it great for
-          industry. It is not often that a Debian system runs into conflict.
+          much larger.
+        </p>
+        <p>
+          Because Debian has a two year gap in between versions with only small
+          security updates in between it tends to lag behind other distributions
+          in terms of bleeding-edge technology. This however makes Debian a
+          really stable distribution, which makes it great for industry. It is
+          not often that a Debian system runs into conflict.
+        </p>
+        <p>
+          Additionally, the Debian group offers support for their versions for
+          up to 5 years, which gives everyone plenty of time to update their
+          system on their own schedule.
+        </p>
+        <p>
           Debian is highly popular, being the main theme of several Linux-based
           conferences (DebCon) and is moderately easy to set up. It does a great
           job at both, server and desktop.

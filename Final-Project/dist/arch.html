@@ -3,55 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
     <title>Linux knowledge dump</title>
   </head>
-  <body>
+  <body id="bg-img">
     <header>
-      <ul>
-        <li class="nav-item"><a href="">Home</a></li>
-        <li class="nav-item"><a href="debian.html">Debian</a></li>
-        <li class="nav-item current"><a href="arch.html">Arch</a></li>
-        <li class="nav-item"><a href="fedora.html">Fedora</a></li>
-        <li class="nav-item"><a href="slackware.html">Slackware</a></li>
-        <li class="nav-item current"><a href="ubuntu.html">Ubuntu</a></li>
+      <ul class="menu-nav hide">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="debian.html">Debian</a>
+        </li>
+        <li class="nav-item current">
+          <a class="nav-link" href="arch.html">Arch</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="fedora.html">Fedora</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="slackware.html">Slackware</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ubuntu.html">Ubuntu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="manjaro.html">Manjaro</a>
+        </li>
       </ul>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
     </header>
     <main id="arch">
       <div class="title">
-        <img src="" alt="Arch Logo" class="distro" />
+        <img
+          class="distro"
+          src="img/arch-logo.png"
+          alt="Arch Logo"
+          class="distro"
+        />
         <h1>Arch</h1>
       </div>
       <div class="spec-wrapper">
-        <p><span class="spec">Based On:</span>Independent</p>
-        <p><span class="spec">Package Manager:</span>Pacman</p>
-        <p><span class="spec">Origin:</span>Canada</p>
+        <p><span class="spec">Based On: </span>Independent.</p>
+        <p><span class="spec">Package Manager: </span>Pacman.</p>
+        <p><span class="spec">Origin: </span>Canada.</p>
         <p>
-          <span class="spec">Popular Desktop Environments:</span>Cinnamon,
-          Enlightenment, GNOME, KDE, LXDE, MATE, Xfce, i3, DWM
+          <span class="spec">Popular Desktop Environments: </span>Cinnamon,
+          Enlightenment, GNOME, KDE, LXDE, MATE, Xfce, i3, DWM.
         </p>
-        <p><span class="spec">Update policy:</span>Rolling release</p>
+        <p><span class="spec">Update policy: </span>Rolling release.</p>
         <p>
-          <span class="spec">Home page:</span
-          ><a href="http://www.archlinux.org/">
+          <span class="spec">Home page: </span
+          ><a class="homepage-link" href="http://www.archlinux.org/"
+            >http://www.archlinux.org/</a
+          >
         </p>
       </div>
       <div class="about">
+        <p><span class="about-spec">About Arch:</span></p>
         <p>
           Arch is a Linux distribution that has a very lightweight default
           installation so that every user can make their own custom install with
-          only the packages they need. It provides a solid base to start from
-          and it is good for both desktop and servers, although it does require
-          some dedication to get into as it is not the most user-friendly
-          distro. It has a fantastic wiki and forum where one is almost sure to
-          find the answer to any problem they might encounter and the
+          only the packages they need.
+        </p>
+        <p>
+          It provides a solid base to start from and it is good for both desktop
+          and servers, although it does require some dedication to get into as
+          it is not the most user-friendly distro.
+        </p>
+        <p>
+          It has a fantastic wiki and forum where one is almost sure to find the
+          answer to any problem they might encounter and the
           <i>Arch User Repository</i> or <i>AUR</i> provides an excellent way
           for users to publish or adapt any kind of packages to this
           distribution and the distributions based on it like Manjaro or
-          Endeavour OS. Lastly, its rolling release model makes it so that it is
-          usually the one that first to receive the latest updates. This comes,
-          of course, with the risk of running into security problems and
-          compatibility issues, which is the main reason why it is not an
-          industry standard, unlike Debian.
+          Endeavour OS.
+        </p>
+        <p>
+          Lastly, its rolling release model makes it so that it is usually the
+          one that first to receive the latest updates. This comes, of course,
+          with the risk of running into security problems and compatibility
+          issues, which is the main reason why it is not an industry standard,
+          unlike Debian.
         </p>
       </div>
     </main>

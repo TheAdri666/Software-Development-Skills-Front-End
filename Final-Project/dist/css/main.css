@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #444;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+  body#bg-img {
+    background: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img:after {
+      content: '';
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(68, 68, 68, 0.75); }
+
+main {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 60px - 4rem); }
+
+.menu-btn {
+  display: none; }
+
+.distro {
+  height: 12.5rem; }
+
+.menu-nav {
+  margin: 0;
+  padding: 0;
+  height: 4rem;
+  background: #373737;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .menu-nav .nav-item.current > a {
+    color: #eece1a; }
+  .menu-nav .nav-item .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease-out; }
+    .menu-nav .nav-item .nav-link:hover {
+      color: #eece1a; }
+
+h1 {
+  font-size: 6rem; }
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%; }
+  .title img {
+    margin-right: 2rem; }
+  .title::after {
+    content: '';
+    height: 3px;
+    width: 70%;
+    background-color: #fff;
+    position: absolute;
+    transform: translate(0, 15rem); }
+
+.spec-wrapper {
+  width: 60vw; }
+
+.spec {
+  font-weight: 800;
+  color: #eece1a; }
+
+.about {
+  width: 60vw; }
+
+.about-spec {
+  font-weight: 800;
+  font-size: 1.5rem; }
+
+.homepage-link {
+  color: white; }
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2b2b2b;
+  color: #fff;
+  height: 60px; }
+
+@media screen and (max-width: 768px) {
+  .long-h1 {
+    font-size: 3rem; }
+  .title {
+    flex-direction: column;
+    align-items: center; }
+    .title img {
+      margin-right: 0; }
+    .title::after {
+      transform: translate(0, 10rem); }
+  main {
+    min-height: calc(100vh - 60px); }
+  .distro {
+    width: 15rem; }
+  .menu-nav {
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column; }
+    .menu-nav.hide {
+      display: none; }
+  .menu-btn {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    transition: all 0.5s ease-out; }
+    .menu-btn .btn-line {
+      width: 28px;
+      height: 3px;
+      margin: 0 0 5px 0;
+      background: #fff;
+      transition: all 0.5s ease-out; }
+    .menu-btn.close {
+      transform: rotate(180deg); }
+      .menu-btn.close .btn-line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px); }
+      .menu-btn.close .btn-line:nth-child(2) {
+        opacity: 0; }
+      .menu-btn.close .btn-line:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px); } }
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem; }
+  .long-h1 {
+    font-size: 1.7rem; }
+  .title {
+    flex-direction: column;
+    align-items: center; }
+    .title img {
+      margin-right: 0; }
+    .title::after {
+      transform: translate(0, 9rem); }
+  main {
+    min-height: calc(100vh - 70px); }
+  .distro {
+    width: 15rem; }
+  .menu-nav {
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column; }
+    .menu-nav.hide {
+      display: none; }
+  .menu-btn {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    transition: all 0.5s ease-out; }
+    .menu-btn .btn-line {
+      width: 28px;
+      height: 3px;
+      margin: 0 0 5px 0;
+      background: #fff;
+      transition: all 0.5s ease-out; }
+    .menu-btn.close {
+      transform: rotate(180deg); }
+      .menu-btn.close .btn-line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px); }
+      .menu-btn.close .btn-line:nth-child(2) {
+        opacity: 0; }
+      .menu-btn.close .btn-line:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px); }
+  footer {
+    height: 70px; } }

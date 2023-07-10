@@ -3,26 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
     <title>Linux knowledge dump</title>
   </head>
-  <body>
+  <body id="bg-img">
     <header>
-      <ul>
-        <li class="nav-item"><a href="">Home</a></li>
-        <li class="nav-item"><a href="debian.html">Debian</a></li>
-        <li class="nav-item"><a href="arch.html">Arch</a></li>
-        <li class="nav-item"><a href="fedora.html">Fedora</a></li>
-        <li class="nav-item"><a href="slackware.html">Slackware</a></li>
-        <li class="nav-item current"><a href="ubuntu.html">Ubuntu</a></li>
+      <ul class="menu-nav hide">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="debian.html">Debian</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="arch.html">Arch</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="fedora.html">Fedora</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="slackware.html">Slackware</a>
+        </li>
+        <li class="nav-item current">
+          <a class="nav-link" href="ubuntu.html">Ubuntu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="manjaro.html">Manjaro</a>
+        </li>
       </ul>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
     </header>
     <main id="arch">
       <div class="title">
-        <img src="" alt="Arch Logo" class="distro" />
+        <img
+          class="distro"
+          src="img/ubuntu-logo.png"
+          alt="Arch Logo"
+          class="distro"
+        />
         <h1>Ubuntu</h1>
       </div>
       <div class="spec-wrapper">
-        <p><span class="spec"></span></p>
+        <p><span class="spec">Based On: </span>Debian.</p>
+        <p><span class="spec">Package Manager: </span>Apt.</p>
+        <p><span class="spec">Origin: </span>Isle of Man.</p>
+        <p><span class="spec">Popular Desktop Environments: </span>GNOME.</p>
+        <p><span class="spec">Update policy: </span>Once every six months.</p>
+        <p>
+          <span class="spec">Home page: </span
+          ><a class="homepage-link" href="https://www.ubuntu.com/"
+            >https://www.ubuntu.com/</a
+          >
+        </p>
+      </div>
+      <div class="about">
+        <p><span class="about-spec">About Ubuntu:</span></p>
+        <p>
+          Ubuntu is a Debian based, begginner friendly Linux distribution. It is
+          one of, if not the most popular Linux distributions to date and many
+          popular distros like Linux Mint, Zorin OS, Pop Os or Elementary OS are
+          based on it.
+        </p>
+        <p>
+          Altough Ubuntu is best used on a desktop machine <i>Canonical</i>, the
+          company that owns the Ubuntu OS offers a free Ubuntu server
+          alternative.
+        </p>
+        <p>
+          Because Ubuntu only really features the GNOME dekstop many there are
+          several distributions based on Ubuntu just with a different desktop
+          Environment such as Kubuntu featuring KDE Plasma, Xubuntu featuring
+          Xfce or Lubuntu featuring LXDE.
+        </p>
+        <p>
+          Many people do not like the trajectory that Canonical is taking
+          regarding Ubuntu but it still remains a highly popular distribution
+          that many new users and Linux veterans alike continue to enjoy.
+        </p>
       </div>
     </main>
     <footer>

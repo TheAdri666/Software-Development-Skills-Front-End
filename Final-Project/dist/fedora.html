@@ -3,25 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
     <title>Linux knowledge dump</title>
   </head>
-  <body>
+  <body id="bg-img">
     <header>
-      <ul>
-        <li class="nav-item"><a href="">Home</a></li>
-        <li class="nav-item"><a href="debian.html">Debian</a></li>
-        <li class="nav-item"><a href="arch.html">Arch</a></li>
-        <li class="nav-item current"><a href="fedora.html">Fedora</a></li>
-        <li class="nav-item"><a href="slackware.html">Slackware</a></li>
-        <li class="nav-item current"><a href="ubuntu.html">Ubuntu</a></li>
+      <ul class="menu-nav hide">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="debian.html">Debian</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="arch.html">Arch</a></li>
+        <li class="nav-item current">
+          <a class="nav-link" href="fedora.html">Fedora</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="slackware.html">Slackware</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ubuntu.html">Ubuntu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="manjaro.html">Manjaro</a>
+        </li>
       </ul>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
     </header>
     <main id="fedora">
       <div class="title">
-        <img src="" alt="Fedora Logo" class="distro" />
+        <img
+          class="distro"
+          src="img/fedora-logo.png"
+          alt="Fedora Logo"
+          class="distro"
+        />
         <h1>Fedora</h1>
       </div>
-      <p></p>
+      <div class="spec-wrapper">
+        <p><span class="spec">Based On: </span>Independent.</p>
+        <p><span class="spec">Package Manager: </span>Dnf.</p>
+        <p><span class="spec">Origin: </span>USA.</p>
+        <p>
+          <span class="spec">Popular Desktop Environments: </span>GNOME, KDE,
+          Xfce, LXDE, MATE, Cinnamon.
+        </p>
+        <p><span class="spec">Update policy: </span>6 month versions.</p>
+        <p>
+          <span class="spec">Home page: </span
+          ><a class="homepage-link" href="https://getfedora.org/"
+            >https://getfedora.org/</a
+          >
+        </p>
+      </div>
+      <div class="about">
+        <p><span class="about-spec">About Fedora:</span></p>
+        <p>
+          Fedora is a Linux distribution developed by the Fedora Project, which
+          is a community supported group and it is owned by Red Hat.
+        </p>
+        <p>
+          Fedora contains free and open source software and tries to be on the
+          leading edge of these technologies. The Fedora team tries to focus on
+          innovation, early integration of new technologies and tries to work
+          closely with Linux communities.
+        </p>
+        <p>
+          Its default desktop environment is GNOME and it does a great job of
+          integrating it seamlessly with the rest of the OS but many more are
+          available to the user.
+        </p>
+        <p>
+          Fedora is very easy to set up and to get familiar with and it doesn't
+          tend to get old as Debian systems often do, which is why it is the
+          choice of distro for Linus Torvalds, the founder of the Linux kernel.
+        </p>
+      </div>
     </main>
     <footer>
       Copyright &copy; 2023 (Actually not copyrighted, it just looked good)
