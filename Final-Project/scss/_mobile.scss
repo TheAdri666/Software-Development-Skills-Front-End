@@ -1,9 +1,13 @@
 @include mediaXXL {
-
+  .title {
+    margin-bottom: 3rem;
+  }
 }
 
 @include mediaXL {
-
+  .title {
+    margin-bottom: 3rem;
+  }
 }
 
 @include mediaL {
@@ -18,6 +22,7 @@
   .title {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
 
     img {
       margin-right: 0;
@@ -103,6 +108,7 @@
   .title {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
 
     img {
       margin-right: 0;
@@ -194,6 +200,7 @@
   .title {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
 
     img {
       margin-right: 0;
